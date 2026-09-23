@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "requestId": "demo-003",
+  "stock": { "symbol": "MOCK-A", "name": "A 公司" },
+  "timeRange": {
+    "mode": "lastTradingDays",
+    "start": "2025-03-04",
+    "end": "2025-03-31",
+    "tradingDays": 20,
+    "timezone": "Asia/Shanghai"
+  },
+  "metrics": [{ "id": "volume", "label": "成交量", "unit": "股" }],
+  "charts": [
+    {
+      "id": "volume-bars",
+      "type": "bar",
+      "title": "A 公司最近 20 个交易日成交量",
+      "metricIds": ["volume"],
+      "xField": "date",
+      "yFields": ["volume"],
+      "annotations": []
+    }
+  ],
+  "dataSource": {
+    "type": "mock",
+    "name": "Built-in Mock Market Data",
+    "datasetVersion": "1.0.0"
+  },
+  "dataAsOf": "2025-03-31T15:00:00+08:00",
+  "locale": "zh-CN"
+}

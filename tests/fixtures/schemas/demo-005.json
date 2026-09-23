@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "requestId": "demo-005",
+  "stock": { "symbol": "MOCK-B", "name": "B 公司" },
+  "timeRange": {
+    "mode": "dateRange",
+    "start": "2025-03-03",
+    "end": "2025-03-28",
+    "timezone": "Asia/Shanghai"
+  },
+  "metrics": [
+    { "id": "close", "label": "收盘价", "unit": "元" },
+    { "id": "volume", "label": "成交量", "unit": "股" }
+  ],
+  "charts": [
+    {
+      "id": "price-trend",
+      "type": "line",
+      "title": "B 公司 2025-03-03 至 2025-03-28 收盘价",
+      "metricIds": ["close"],
+      "xField": "date",
+      "yFields": ["close"],
+      "annotations": []
+    },
+    {
+      "id": "volume-bars",
+      "type": "bar",
+      "title": "B 公司 2025-03-03 至 2025-03-28 成交量",
+      "metricIds": ["volume"],
+      "xField": "date",
+      "yFields": ["volume"],
+      "annotations": []
+    }
+  ],
+  "dataSource": {
+    "type": "mock",
+    "name": "Built-in Mock Market Data",
+    "datasetVersion": "1.0.0"
+  },
+  "dataAsOf": "2025-03-31T15:00:00+08:00",
+  "locale": "zh-CN"
+}

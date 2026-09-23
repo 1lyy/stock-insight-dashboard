@@ -1,0 +1,24 @@
+{
+  "datasetVersion": "1.0.0",
+  "schemaVersion": "1.0",
+  "dataAsOf": "2025-03-31T15:00:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "dateRange": {
+    "start": "2025-01-02",
+    "end": "2025-03-31"
+  },
+  "tradingDayConvention": "weekdays-only-no-holiday-inference",
+  "stockCount": 3,
+  "recordsPerStock": 63,
+  "units": {
+    "price": "CNY",
+    "volume": "shares",
+    "changePct": "percent"
+  },
+  "generation": {
+    "method": "deterministic pre-generated fixture",
+    "runtimeGeneration": false,
+    "randomness": false
+  },
+  "disclaimer": "数据为模拟数据，仅用于演示，不构成投资建议。"
+}

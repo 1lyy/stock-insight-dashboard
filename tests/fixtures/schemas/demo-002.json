@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "requestId": "demo-002",
+  "stock": { "symbol": "MOCK-B", "name": "B 公司" },
+  "timeRange": {
+    "mode": "lastTradingDays",
+    "start": "2025-03-18",
+    "end": "2025-03-31",
+    "tradingDays": 10,
+    "timezone": "Asia/Shanghai"
+  },
+  "metrics": [{ "id": "close", "label": "收盘价", "unit": "元" }],
+  "charts": [
+    {
+      "id": "price-trend",
+      "type": "line",
+      "title": "B 公司最近 10 个交易日收盘价",
+      "metricIds": ["close"],
+      "xField": "date",
+      "yFields": ["close"],
+      "annotations": []
+    }
+  ],
+  "dataSource": {
+    "type": "mock",
+    "name": "Built-in Mock Market Data",
+    "datasetVersion": "1.0.0"
+  },
+  "dataAsOf": "2025-03-31T15:00:00+08:00",
+  "locale": "zh-CN"
+}

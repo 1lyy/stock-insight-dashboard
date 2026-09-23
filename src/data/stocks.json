@@ -1,0 +1,23 @@
+[
+  {
+    "id": "stock-a",
+    "symbol": "MOCK-A",
+    "name": "A 公司",
+    "currency": "CNY",
+    "exchange": "MOCK"
+  },
+  {
+    "id": "stock-b",
+    "symbol": "MOCK-B",
+    "name": "B 公司",
+    "currency": "CNY",
+    "exchange": "MOCK"
+  },
+  {
+    "id": "stock-c",
+    "symbol": "MOCK-C",
+    "name": "C 公司",
+    "currency": "CNY",
+    "exchange": "MOCK"
+  }
+]
